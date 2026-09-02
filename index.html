@@ -1,0 +1,1013 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Hon. Josphat Mutati | Senator Kitui County 2027</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth
+}
+
+body{
+font-family:Arial,sans-serif;
+background:#f5f7fb;
+color:#333;
+line-height:1.6
+}
+
+section{
+padding:80px 7%;
+scroll-margin-top:70px
+}
+
+/* HEADER */
+
+header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:70px;
+background:#003399;
+color:#fff;
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:0 5%;
+z-index:1000;
+box-shadow:0 4px 15px #0004
+}
+
+.logo{
+font-size:22px;
+font-weight:bold
+}
+
+.logo span{
+color:#ff3131
+}
+
+/* THREE DOT / LINE BUTTON */
+
+.menu{
+display:block;
+background:none;
+border:0;
+color:white;
+font-size:32px;
+cursor:pointer;
+padding:5px 10px
+}
+
+/* RIGHT MENU */
+
+nav{
+position:fixed;
+top:0;
+right:-300px;
+width:300px;
+height:100vh;
+background:#003399;
+display:flex;
+flex-direction:column;
+padding-top:80px;
+transition:.3s;
+box-shadow:-5px 0 20px #0005
+}
+
+nav.active{
+right:0
+}
+
+nav a{
+color:white;
+text-decoration:none;
+padding:15px 25px;
+font-weight:bold;
+font-size:16px;
+border-bottom:1px solid #ffffff22
+}
+
+nav a:hover{
+background:#ff3131
+}
+
+/* HOME */
+
+.hero{
+min-height:100vh;
+padding-top:110px;
+display:flex;
+flex-direction:column;
+align-items:center;
+text-align:center;
+gap:35px;
+background:linear-gradient(135deg,#fff,#eef4ff)
+}
+
+.hero>div{
+width:100%
+}
+
+.hero h1{
+font-size:52px;
+color:#003399;
+line-height:1.1
+}
+
+.hero h2{
+font-size:28px;
+color:#ff3131;
+margin:15px 0
+}
+
+.hero p{
+font-size:18px;
+max-width:850px;
+margin:auto
+}
+
+.hero img{
+width:100%;
+max-width:600px;
+border-radius:20px;
+box-shadow:0 10px 30px #0004
+}
+
+/* BUTTONS */
+
+.btn{
+display:inline-block;
+background:#003399;
+color:white;
+border:0;
+border-radius:30px;
+padding:14px 28px;
+margin:10px;
+text-decoration:none;
+font-weight:bold;
+cursor:pointer
+}
+
+.red{
+background:#ff3131
+}
+
+.btn:hover{
+opacity:.85
+}
+
+/* TITLES */
+
+.title{
+text-align:center;
+color:#003399;
+font-size:35px;
+margin-bottom:30px
+}
+
+/* BOXES */
+
+.box{
+background:white;
+padding:30px;
+border-radius:15px;
+box-shadow:0 5px 20px #ddd;
+max-width:1000px;
+margin:auto
+}
+
+/* CARDS */
+
+.cards{
+display:grid;
+grid-template-columns:1fr;
+gap:20px;
+max-width:1000px;
+margin:auto
+}
+
+.card{
+background:white;
+padding:28px;
+border-radius:15px;
+box-shadow:0 5px 20px #ddd;
+text-align:center
+}
+
+.card h3{
+color:#003399;
+margin-bottom:10px
+}
+
+.card h1{
+color:#ff3131;
+font-size:40px
+}
+
+/* GALLERY */
+
+.gallery{
+display:flex;
+flex-direction:column;
+align-items:center;
+gap:30px
+}
+
+.gallery img{
+width:100%;
+max-width:750px;
+border-radius:15px;
+box-shadow:0 5px 15px #ccc
+}
+
+/* FORM */
+
+form{
+max-width:800px;
+margin:20px auto
+}
+
+input,textarea{
+width:100%;
+padding:14px;
+margin:8px 0;
+border:1px solid #ccc;
+border-radius:8px;
+font-size:16px;
+font-family:Arial
+}
+
+textarea{
+resize:vertical
+}
+
+/* SUPPORT */
+
+.support{
+background:#003399;
+color:white;
+text-align:center;
+padding:45px;
+border-radius:20px;
+max-width:1000px;
+margin:auto
+}
+
+.support h2{
+font-size:30px
+}
+
+.till{
+background:#e60000;
+padding:15px 25px;
+border-radius:10px;
+font-size:22px;
+display:inline-block;
+margin:20px
+}
+
+#payment{
+display:none;
+background:white;
+color:#333;
+padding:20px;
+border-radius:12px;
+margin:20px auto;
+max-width:450px;
+text-align:left
+}
+
+#payment h3{
+color:#003399;
+margin-bottom:10px
+}
+
+/* CONTACT */
+
+.contact{
+background:white;
+padding:30px;
+border-radius:15px;
+box-shadow:0 5px 20px #ddd;
+max-width:800px;
+margin:auto
+}
+
+.contact h3{
+color:#003399;
+margin-bottom:8px
+}
+
+/* FOOTER */
+
+footer{
+background:#001b55;
+color:white;
+text-align:center;
+padding:35px 20px
+}
+
+/* MOBILE */
+
+@media(max-width:600px){
+
+.logo{
+font-size:18px
+}
+
+.hero h1{
+font-size:36px
+}
+
+.hero h2{
+font-size:21px
+}
+
+.hero p{
+font-size:16px
+}
+
+section{
+padding:65px 5%
+}
+
+.title{
+font-size:29px
+}
+
+.support{
+padding:30px 15px
+}
+
+.btn{
+display:block;
+width:220px;
+margin:10px auto
+}
+
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<header>
+
+<div class="logo">
+Hon. <span>Josphat Mutati</span>
+</div>
+
+<button class="menu"
+onclick="toggleMenu()"
+aria-label="Open menu">
+☰
+</button>
+
+<nav id="nav">
+
+<a href="#home" onclick="closeMenu()">Home</a>
+
+<a href="#about" onclick="closeMenu()">About</a>
+
+<a href="#vision" onclick="closeMenu()">Vision</a>
+
+<a href="#mission" onclick="closeMenu()">Mission</a>
+
+<a href="#manifesto" onclick="closeMenu()">Manifesto</a>
+
+<a href="#why" onclick="closeMenu()">Why Vote</a>
+
+<a href="#statistics" onclick="closeMenu()">Priorities</a>
+
+<a href="#gallery" onclick="closeMenu()">Gallery</a>
+
+<a href="#news" onclick="closeMenu()">Updates</a>
+
+<a href="#agenda" onclick="closeMenu()">Agenda</a>
+
+<a href="#support" onclick="closeMenu()">Support</a>
+
+<a href="#contact" onclick="closeMenu()">Contact</a>
+
+</nav>
+
+</header>
+
+
+<!-- HOME -->
+
+<section class="hero" id="home">
+
+<div>
+
+<h1>Hon. Josphat Mutati</h1>
+
+<h2>Incoming Senator – Kitui County 2027</h2>
+
+<p>
+A visionary leader committed to unity,
+accountability, development and service
+to the people of Kitui County.
+</p>
+
+<br>
+
+<p>
+Together we shall build a stronger,
+prosperous and inclusive Kitui for every family.
+</p>
+
+<br>
+
+<a href="#agenda" class="btn">
+Share Your Agenda
+</a>
+
+<a href="#support" class="btn red">
+Support Campaign
+</a>
+
+</div>
+
+
+<!-- MAIN IMAGE -->
+
+<div>
+
+<img src="mutati-poster.jpg"
+alt="Hon. Josphat Mutati Campaign Poster">
+
+</div>
+
+</section>
+
+
+<!-- ABOUT -->
+
+<section id="about">
+
+<h2 class="title">
+About Hon. Josphat Mutati
+</h2>
+
+<div class="box">
+
+<p>
+Hon. Josphat Mutati is a servant leader dedicated
+to transforming Kitui County through visionary
+leadership, integrity and accountability.
+</p>
+
+<br>
+
+<p>
+His mission is to champion the interests of every
+resident while promoting economic growth,
+quality education, better healthcare, youth
+empowerment and sustainable development.
+</p>
+
+</div>
+
+</section>
+
+
+<!-- VISION -->
+
+<section id="vision">
+
+<h2 class="title">
+Our Vision
+</h2>
+
+<div class="box">
+
+<p>
+To build a united, empowered and prosperous
+Kitui County where every citizen enjoys equal
+opportunities, quality services and sustainable
+economic growth.
+</p>
+
+</div>
+
+</section>
+
+
+<!-- MISSION -->
+
+<section id="mission">
+
+<h2 class="title">
+Our Mission
+</h2>
+
+<div class="box">
+
+<p>
+To provide transparent leadership, protect
+devolution, advocate for quality healthcare
+and education, empower youth and women,
+improve agriculture and ensure every voice
+from Kitui County is represented.
+</p>
+
+</div>
+
+</section>
+
+
+<!-- MANIFESTO -->
+
+<section id="manifesto">
+
+<h2 class="title">
+Our Manifesto
+</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Youth Empowerment</h3>
+<p>
+Create jobs, promote ICT training,
+innovation and entrepreneurship.
+</p>
+</div>
+
+<div class="card">
+<h3>Quality Education</h3>
+<p>
+Better schools, bursaries and
+digital learning opportunities.
+</p>
+</div>
+
+<div class="card">
+<h3>Healthcare</h3>
+<p>
+Quality and affordable healthcare
+services for every resident.
+</p>
+</div>
+
+<div class="card">
+<h3>Agriculture</h3>
+<p>
+Support farmers through irrigation,
+markets and affordable farm inputs.
+</p>
+</div>
+
+<div class="card">
+<h3>Water & Environment</h3>
+<p>
+Increase access to clean water and
+protect our environment.
+</p>
+</div>
+
+<div class="card">
+<h3>Infrastructure</h3>
+<p>
+Better roads, electricity and
+internet connectivity.
+</p>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- WHY VOTE -->
+
+<section id="why">
+
+<h2 class="title">
+Why Vote Hon. Josphat Mutati?
+</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Integrity</h3>
+<p>
+Honesty, accountability and transparency.
+</p>
+</div>
+
+<div class="card">
+<h3>Experience</h3>
+<p>
+Committed to serving every citizen.
+</p>
+</div>
+
+<div class="card">
+<h3>Development</h3>
+<p>
+Focused on lasting solutions.
+</p>
+</div>
+
+<div class="card">
+<h3>Unity</h3>
+<p>
+Building a stronger and united Kitui.
+</p>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- PRIORITIES -->
+
+<section id="statistics">
+
+<h2 class="title">
+Campaign Priorities
+</h2>
+
+<div class="cards">
+
+<div class="card">
+<h1>100%</h1>
+<h3>Commitment</h3>
+</div>
+
+<div class="card">
+<h1>40</h1>
+<h3>Wards to Reach</h3>
+</div>
+
+<div class="card">
+<h1>1</h1>
+<h3>United Kitui</h3>
+</div>
+
+<div class="card">
+<h1>2027</h1>
+<h3>Victory Together</h3>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- GALLERY -->
+
+<section id="gallery">
+
+<h2 class="title">
+Campaign Gallery
+</h2>
+
+<div class="gallery">
+
+<img src="mutati.jpg"
+alt="Campaign Poster">
+
+<img src="mutati12.jpg"
+alt="Campaign Image">
+
+<img src="mutati1.jpg"
+alt="Campaign Image">
+
+</div>
+
+</section>
+
+
+<!-- UPDATES -->
+
+<section id="news">
+
+<h2 class="title">
+Latest Campaign Updates
+</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>Listening to the People</h3>
+
+<p>
+Our campaign is committed to listening
+to every resident and turning their ideas
+into action.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Youth First</h3>
+
+<p>
+Empowering young people through
+education, innovation and employment
+opportunities.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Protecting Devolution</h3>
+
+<p>
+Working to ensure county resources
+benefit the people.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- AGENDA -->
+
+<section id="agenda">
+
+<h2 class="title">
+Share Your Agenda
+</h2>
+
+<div class="box">
+
+<p style="text-align:center">
+Your ideas matter. Share your agenda
+and help shape the future of Kitui County.
+</p>
+
+<form onsubmit="sendWhatsApp();return false">
+
+<input
+id="name"
+type="text"
+placeholder="Full Name"
+required>
+
+<input
+id="email"
+type="email"
+placeholder="Email Address"
+required>
+
+<input
+id="ward"
+type="text"
+placeholder="Ward"
+required>
+
+<textarea
+id="agendaText"
+rows="6"
+placeholder="Write your agenda..."
+required></textarea>
+
+<button class="btn" type="submit">
+Submit via WhatsApp
+</button>
+
+</form>
+
+</div>
+
+</section>
+
+
+<!-- SUPPORT -->
+
+<section id="support">
+
+<div class="support">
+
+<h2>
+Support Hon. Josphat Mutati
+</h2>
+
+<br>
+
+<p>
+Together we can build a united,
+prosperous and developed Kitui County.
+</p>
+
+<div class="till">
+Till Number: <strong>9533139</strong>
+</div>
+
+<br>
+
+<button class="btn red"
+onclick="showPayment()">
+Support via M-Pesa
+</button>
+
+
+<div id="payment">
+
+<h3>
+How to Support via M-Pesa
+</h3>
+
+<br>
+
+<p>1. Open M-Pesa.</p>
+
+<p>
+2. Select <b>Lipa na M-Pesa</b>.
+</p>
+
+<p>
+3. Select <b>Buy Goods and Services</b>.
+</p>
+
+<p>
+4. Enter Till Number:
+<b>9533139</b>.
+</p>
+
+<p>
+5. Enter the amount.
+</p>
+
+<p>
+6. Confirm the transaction.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section id="contact">
+
+<h2 class="title">
+Contact Us
+</h2>
+
+<div class="contact">
+
+<h3>Campaign Office</h3>
+
+<p>
+📞 Phone / WhatsApp:
+<strong>+254 713 810092</strong>
+</p>
+
+<br>
+
+<p>
+📧 Email:
+<strong>josphatmutati80@gmail.com</strong>
+</p>
+
+<br>
+
+<p>
+📍 Kitui County, Kenya
+</p>
+
+<br>
+
+<h3>
+Campaign Message
+</h3>
+
+<p>
+"Together We Can Build a Better Kitui."
+</p>
+
+</div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+<h2>
+Hon. Josphat Mutati
+</h2>
+
+<p>
+Incoming Senator - Kitui County 2027
+</p>
+
+<br>
+
+<p>
+Leadership • Integrity • Accountability • Development
+</p>
+
+<br>
+
+<p>
+© 2026 Hon. Josphat Mutati Campaign
+</p>
+
+<p>
+Designed by Daughlus
+</p>
+
+</footer>
+
+
+<script>
+
+/* MENU */
+
+function toggleMenu(){
+
+document
+.getElementById("nav")
+.classList.toggle("active");
+
+}
+
+function closeMenu(){
+
+document
+.getElementById("nav")
+.classList.remove("active");
+
+}
+
+
+/* WHATSAPP */
+
+function sendWhatsApp(){
+
+let name=
+document.getElementById("name").value;
+
+let email=
+document.getElementById("email").value;
+
+let ward=
+document.getElementById("ward").value;
+
+let agenda=
+document.getElementById("agendaText").value;
+
+let message=
+"HON. JOSPHAT MUTATI - SENATOR KITUI COUNTY 2027\n\n"+
+"Full Name: "+name+"\n"+
+"Email: "+email+"\n"+
+"Ward: "+ward+"\n\n"+
+"Agenda:\n"+agenda;
+
+let url=
+"https://wa.me/254713810092?text="+
+encodeURIComponent(message);
+
+window.open(url,"_blank");
+
+}
+
+
+/* MPESA */
+
+function showPayment(){
+
+let box=
+document.getElementById("payment");
+
+if(box.style.display==="block"){
+
+box.style.display="none";
+
+}else{
+
+box.style.display="block";
+
+}
+
+}
+
+</script>
+
+</body>
+</html>
